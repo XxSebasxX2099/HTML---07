@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 40px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    padding: 8px 20px;
+}
+
+.btn-outline:hover {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+
+.btn-pink {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 15px 40px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-pink:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+
+.bg-pale-blue {
+    background-color: hsl(207, 100%, 98%);
+}
+
+.feature-section {
+    padding: 20px 0;
+}
+
+.curve {
+    width: 100%;
+    display: block;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 0 20px 60px 20px;
+    font-size: 14px;
+}
+
+.logo-white-bg {
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 140px;
+}
+
+.social-links a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: hsl(322, 100%, 66%);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    
+    .logo {
+        width: 120px;
+    }
+
+    .mobile-curve {
+        display: block;
+    }
+
+    .desktop-curve {
+        display: none;
+    }
+
+    .hero-section, .stats-section, .cta-section, .text-content {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .container-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .stats-section {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .stat-box img { 
+        width: 35px;
+        margin: 0 auto 10px auto;
+    }
+    
+    .stat-box h2 { 
+        font-size: 60px; 
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-end;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: hsl(322, 100%, 66%);
+        color: white;
+        font-weight: 700;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .social-links { 
+        font-size: 18px; 
+        margin-top: 40px; 
+    }
+    
+    .copyright { 
+        text-align: center; 
+        margin-top: 40px; 
+    }
+}
+
+@media (min-width: 769px) {
+
+    h1 { 
+        font-size: 40px; 
+    }
+    
+    .logo { 
+        width: 180px; 
+    }
+
+    .mobile-curve {
+        display: none;
+    }
+
+    .desktop-curve {
+        display: block;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 60px 0;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .hero-content h1 { 
+        font-size: 44px; 
+    }
+    
+    .hero-image { 
+        margin-top: 50px; 
+    }
+
+    .stats-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+    
+    .stat-box img { 
+        width: 45px; 
+    }
+    
+    .stat-box h2 { 
+        font-size: 80px; 
+    }
+
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .text-content, .image-content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .cta-section { 
+        text-align: center; 
+        padding: 80px 0; 
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .footer-info { 
+        flex: 1.5; 
+    }
+    
+    .footer-newsletter { 
+        flex: 1; 
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .newsletter-form input { 
+        width: 65%; 
+        padding: 15px; 
+        border-radius: 5px; 
+        border: none; 
+    }
+    
+    .newsletter-form button { 
+        width: 35%; 
+        border-radius: 5px; 
+        border: none;
+        background-color: hsl(322, 100%, 66%);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .newsletter-form button:hover { 
+        background-color: hsl(321, 100%, 78%); 
+    }
+    
+    .footer-desc { 
+        max-width: 350px; 
+        margin-bottom: 20px; 
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .social-links { 
+        font-size: 16px; 
+        margin-top: 20px; 
+    }
+    
+    .copyright { 
+        text-align: right; 
+        margin-top: 40px; 
+        font-size: 12px; 
+        margin-right: 100px; 
+    }
+}
